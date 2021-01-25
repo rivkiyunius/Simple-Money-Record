@@ -44,6 +44,7 @@ class HomeAdapter(private val diffCallback: DiffCallback = DiffCallback()): Recy
                 tv_terima_dari.text = uangMasuk.terimaDari
                 tv_keterangan.text = uangMasuk.keterangan
                 tv_jumlah.text = uangMasuk.jumlah.toString()
+                tv_nomor.text = uangMasuk.nomor
             }
         }
     }

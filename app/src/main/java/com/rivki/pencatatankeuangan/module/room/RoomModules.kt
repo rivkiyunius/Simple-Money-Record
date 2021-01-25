@@ -13,7 +13,7 @@ object RoomModules: BaseModule {
     private val roomModule = module {
         single {
             Room.databaseBuilder(get(), AppDatabase::class.java, "nutapos-test")
-                .fallbackToDestructiveMigration()
+                .addMigrations(RoomMigration.MIGRATION_1_2)
                 .build()
         }
         single { get<AppDatabase>().uangMasukDao() }

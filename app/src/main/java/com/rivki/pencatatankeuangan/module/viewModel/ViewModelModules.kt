@@ -14,7 +14,7 @@ object ViewModelModules: BaseModule {
 
     private val viewModelModule = module{
         viewModel { HomeViewModel(get()) }
-        viewModel { TambahDataKeuanganViewModel(get()) }
+        viewModel { TambahDataKeuanganViewModel(get(), get()) }
         factory { DiffCallback() }
     }
 

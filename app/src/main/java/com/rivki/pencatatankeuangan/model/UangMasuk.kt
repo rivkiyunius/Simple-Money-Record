@@ -12,5 +12,7 @@ data class UangMasuk(
     var uangMasuId: Int = 0,
     var terimaDari: String?,
     var keterangan: String?,
-    var jumlah: Int
+    var jumlah: Int,
+    var tanggal: String?,
+    var nomor: String?
 ) : Parcelable

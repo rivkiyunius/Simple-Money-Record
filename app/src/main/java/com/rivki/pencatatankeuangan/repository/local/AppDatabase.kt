@@ -5,7 +5,7 @@ import androidx.room.RoomDatabase
 import com.rivki.pencatatankeuangan.model.UangMasuk
 import com.rivki.pencatatankeuangan.model.db.UangMasukDao
 
-@Database(entities = [UangMasuk::class], version = 1, exportSchema = false)
+@Database(entities = [UangMasuk::class], version = 2, exportSchema = false)
 abstract class AppDatabase: RoomDatabase(){
     abstract fun uangMasukDao(): UangMasukDao
 }
