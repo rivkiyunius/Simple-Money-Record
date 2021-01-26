@@ -10,4 +10,14 @@ object RoomMigration {
             database.execSQL("ALTER TABLE uang_masuk ADD COLUMN nomor TEXT")
         }
     }
+
+    val MIGRATION_2_3 = object : Migration(2, 3) {
+        override fun migrate(database: SupportSQLiteDatabase) {
+            database.execSQL(
+                "CREATE TABLE rekening(" +
+                        "rekeningID INTEGER PRIMARY KEY AUTOINCREMENT,namaBank TEXT,nomorRekening TEXT,atasNama TEXT)"
+            )
+            database.execSQL("ALTER TABLE uang_masuk ADD COLUMN rekeningID INTEGER")
+        }
+    }
 }

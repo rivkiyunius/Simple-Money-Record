@@ -10,6 +10,7 @@ import com.rivki.pencatatankeuangan.R
 import com.rivki.pencatatankeuangan.base.BaseActivity
 import com.rivki.pencatatankeuangan.base.DiffCallback
 import com.rivki.pencatatankeuangan.model.UangMasuk
+import com.rivki.pencatatankeuangan.ui.rekening.TambahDataRekeningActivity
 import com.rivki.pencatatankeuangan.ui.tambahDataKeuangan.TambahDataKeuanganActivity
 import com.rivki.pencatatankeuangan.util.toast
 import kotlinx.android.synthetic.main.activity_main.*
@@ -41,6 +42,10 @@ class MainActivity : BaseActivity() {
         }
         fab_main.setOnClickListener {
             val intent = Intent(this@MainActivity, TambahDataKeuanganActivity::class.java)
+            startActivity(intent)
+        }
+        fab_main_rekening.setOnClickListener {
+            val intent = Intent(this@MainActivity, TambahDataRekeningActivity::class.java)
             startActivity(intent)
         }
     }

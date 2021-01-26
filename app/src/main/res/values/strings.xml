@@ -5,4 +5,7 @@
     <string name="jumlah">Jumlah</string>
     <string name="simpan">Simpan</string>
     <string name="tombol_tambah">Tombol Tambah</string>
+    <string name="nama_bank">Nama Bank</string>
+    <string name="no_rekening">No rekening</string>
+    <string name="atas_nama">Atas nama</string>
 </resources>

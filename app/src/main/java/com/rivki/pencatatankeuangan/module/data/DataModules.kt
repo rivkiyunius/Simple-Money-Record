@@ -11,7 +11,7 @@ object DataModules: BaseModule {
         get() = listOf(dataModule)
 
     private val dataModule = module {
-        single {LocalDataSource(get())}
+        single {LocalDataSource(get(), get())}
         single {DataRepository(get())}
     }
 

@@ -18,6 +18,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".ui.tambahDataKeuangan.TambahDataKeuanganActivity"/>
+        <activity android:name=".ui.rekening.TambahDataRekeningActivity"/>
     </application>
 
 </manifest>

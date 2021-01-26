@@ -13,9 +13,10 @@ object RoomModules: BaseModule {
     private val roomModule = module {
         single {
             Room.databaseBuilder(get(), AppDatabase::class.java, "nutapos-test")
-                .addMigrations(RoomMigration.MIGRATION_1_2)
+                .addMigrations(RoomMigration.MIGRATION_1_2, RoomMigration.MIGRATION_2_3)
                 .build()
         }
-        single { get<AppDatabase>().uangMasukDao() }
+        single {get<AppDatabase>().uangMasukDao()}
+        single {get<AppDatabase>().rekeningDao()}
     }
 }

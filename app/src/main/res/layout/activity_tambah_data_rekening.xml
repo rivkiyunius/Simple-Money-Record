@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <EditText
+        android:id="@+id/et_nama_bank"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="@string/nama_bank"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <EditText
+        android:id="@+id/et_no_rekening"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/no_rekening"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="10dp"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="@id/et_nama_bank"
+        app:layout_constraintEnd_toEndOf="@id/et_nama_bank"
+        app:layout_constraintTop_toBottomOf="@id/et_nama_bank"/>
+
+    <EditText
+        android:id="@+id/et_atas_nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/atas_nama"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@id/et_no_rekening"
+        app:layout_constraintEnd_toEndOf="@id/et_no_rekening"
+        app:layout_constraintTop_toBottomOf="@id/et_no_rekening"/>
+
+    <Button
+        android:id="@+id/btn_simpan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/simpan"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@id/et_atas_nama"
+        app:layout_constraintEnd_toEndOf="@id/et_atas_nama"
+        app:layout_constraintTop_toBottomOf="@id/et_atas_nama"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -14,5 +14,6 @@ data class UangMasuk(
     var keterangan: String?,
     var jumlah: Int,
     var tanggal: String?,
-    var nomor: String?
+    var nomor: String?,
+    var rekeningID: Int? = 0
 ) : Parcelable
